@@ -1,0 +1,13 @@
+extends layout
+block content
+  main
+    img(src="images/logo.png").logo
+    div.gif-container
+      div(style="background-image:url(#{gif})",class="gif-image")
+        div.gif-meme #{meme}
+    div.new-gif
+      p= "Insert new Gif"
+      form(method="post",action="/gif")
+        input(type="text",name="gifUrl",placeholder="GIF URL",required).input-text
+        input(type="text",name="meme",placeholder="Enter Meme Text").input-text
+        input(type="submit",value="Save").save-button
