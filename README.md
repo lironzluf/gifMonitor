@@ -1,5 +1,6 @@
 # gifMonitor
 Gif / Image app for dev team monitor
+
 Express (Node.js) server, Jade For templating, MongoDB for DB
 
 #Installation
